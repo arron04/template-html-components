@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/f95d75f79f.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Accordion</title>
+  </head>
+  <body>
+    <article>
+      <section class="accordion">
+        <details>
+          <summary>
+            Accordion Title
+            <div class="chevron-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                width="24"
+                height="24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+          </summary>
+          <p>
+            Accordian description: Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Dolorum culpa repudiandae, saepe eaque quos soluta
+            mollitia omnis autem ea corrupti perferendis, sapiente cumque
+            voluptates natus quidem aperiam delekniti, rerum doloremque!
+          </p>
+        </details>
+      </section>
+      <section class="accordion">
+        <details>
+          <summary>
+            Accordion Title
+            <div class="chevron-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                width="24"
+                height="24"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </div>
+          </summary>
+          <p>
+            Accordian description: Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit. Dolorum culpa repudiandae, saepe eaque quos soluta
+            mollitia omnis autem ea corrupti perferendis, sapiente cumque
+            voluptates natus quidem aperiam delekniti, rerum doloremque!
+          </p>
+        </details>
+      </section>
+    </article>
+
+    <style>
+      details > summary {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        cursor: pointer;
+        font-weight: 600;
+      }
+      details > summary::-webkit-details-marker {
+        display: none;
+      }
+      details[open] .chevron-icon {
+        transform: rotate(90deg);
+      }
+      .accordion {
+        margin: 0.5rem 0 0 0;
+        padding: 1rem;
+        border-radius: 0.3rem;
+        box-shadow: 1px 2px 9px -1px rgba(0, 0, 0, 0.103);
+        border: 1px solid #e7e7e7;
+      }
+    </style>
+  </body>
+</html>
