@@ -1,0 +1,21 @@
+details > summary {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+  details[open] .chevron-icon {
+    transform: rotate(90deg);
+  }
+  .accordion {
+    margin: 0.5rem 0 0 0;
+    padding: 1rem;
+    border-radius: 0.3rem;
+    box-shadow: 0.1rem 0.2rem 0.9rem -1px rgba(0, 0, 0, 0.103);
+    border: 0.1rem solid #e7e7e7;
+  }
